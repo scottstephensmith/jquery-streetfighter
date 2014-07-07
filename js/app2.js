@@ -38,6 +38,7 @@ $(document).ready(function() {
       console.log("X was pressed");	
       playLoop();
       $('.ryu-ready').hide();
+      $('.ryu-still').hide();
       $('.ryu-cool').show();
     }
     })
@@ -51,7 +52,7 @@ $(document).ready(function() {
         $('#loop-sound')[0].pause();
         $('#loop-sound')[0].load();
         $('.ryu-cool').hide();
-        $('.ryu-still').show();
+        $('.ryu-ready').show();
       }
     })
 });
