@@ -24,8 +24,9 @@ $(document).ready(function() {
     $('.ryu-ready').show();
   })
   // my custom keydown work starts here
-  $(document).keydown(function(event) {
-        if ( event.which == 88 ) {
+  $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+        case 88:
         console.log("X was pressed");	
   		playLoop();
   		$('.ryu-ready').hide();
@@ -33,7 +34,8 @@ $(document).ready(function() {
   	}
   })
   .keyup(function(key) {
-        if ( event.which == 88 ) {	
+        switch(parseInt(key.which,10)) {
+        case 88:	
         $('#loop-sound')[0].pause();
       	$('#loop-sound')[0].load();
   		$('.ryu-cool').hide();

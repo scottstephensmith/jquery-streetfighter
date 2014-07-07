@@ -38,6 +38,7 @@ $(document).ready(function() {
       console.log("X was pressed");	
       playLoop();
       $('.ryu-ready').hide();
+      $('.ryu-still').hide();
       $('.ryu-cool').show();
     }
     })
