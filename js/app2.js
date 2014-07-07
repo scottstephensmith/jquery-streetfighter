@@ -47,7 +47,7 @@ $(document).ready(function() {
         // Part of not registering multiple key presses  
         delete keysdown[e.keyCode];
 
-        // stopping the music on keyup 
+        // stopping the music on keyup, argh!
         $('#loop-sound')[0].pause();
         $('#loop-sound')[0].load();
         $('.ryu-cool').hide();
