@@ -53,3 +53,31 @@ body {
   left: -195px;
   float: left;
 }
+
+.textbox {
+	position: absolute;
+	left: 650px;
+	height: 425px;
+	width: 600px;
+	padding-top: 250px;
+	display:block;
+}
+
+.toptext {
+	display:block;
+	font-size:30px;
+}
+
+.bottomtext {
+	display:block;
+	font-size:30px;
+	margin-left:100px;
+	margin-top:50px;
+}
+
+.subtitle {
+	font-size:10px;
+	text-align: right;
+	margin-right:50px;
+	padding-top:10px;
+}

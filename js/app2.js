@@ -55,6 +55,14 @@ $(document).ready(function() {
         $('.ryu-ready').show();
       }
     })
+
+  $('.bottomtext').mouseenter(function(){
+        $(this).effect("bounce", "slow");
+        $(this).css('color', 'purple');
+  })
+  $('.bottomtext').mouseleave(function(){
+        $(this).css('color', 'black');
+  })
 });
 
 
